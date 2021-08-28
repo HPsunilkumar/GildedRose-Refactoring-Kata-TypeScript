@@ -41,10 +41,10 @@ export class GildedRose {
     updateQuality() {
         this.items.forEach((item) => {
           const { name } = item;
-    
-          // degradeQuantity
+          
           item.sellIn -= 1;
-    
+
+          // degradeQuantity
           if (name === SULFURAS) {
             item.quality = 80;
             item.sellIn = 1;
